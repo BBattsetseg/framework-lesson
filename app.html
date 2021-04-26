@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="full-container flex between column">
+        <header class="header"></header>
+        <main class="main flex">
+            <sidebar class="sidebar flex-1"></sidebar>
+            <div class="content-container flex flex-3 column">
+              
+                    <div class="content-1 flex-1"></div>
+                    <div class=" flex flex-1">
+                        <div class="content-2 flex-1"></div>
+                        <div class="content-3 flex-1" ></div>
+                    </div>
+            
+            </div>
+        </main>
+        <footer class="footer"></footer>
+    </div>
+</body>
+</html>
