@@ -4,32 +4,88 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style>
+      .brand-logo>img {
+        color: white;
+      }
+
+    </style>
   </head>
   <body>
     <div class="container">
-      <h1>Heading one</h1>
-      <h2>Heading two</h2>
-      <h3>Heading three</h3>
-      <h4>Heading four</h4>
-      <h5>Heading five</h5>
-      <h6>Heading six</h6>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio necessitatibus ex iure debitis esse minus perspiciatis doloremque, modi placeat cum!</p>
-      <blockquote>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab non alias voluptatum illum iure. Libero culpa distinctio sapiente nostrum rerum eos illo fugit nesciunt vitae neque. Laborum delectus tempore explicabo.</blockquote>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam ad cumque, vero itaque, ratione voluptatem nulla impedit magni quis placeat quam voluptas dolores ea voluptatum laudantium adipisci animi unde dolor!</p>
-      <p class="left-align">Left-align-text</p>
-      <p class="right-align">Right-align-text</p>
-      <p class="center-align">Center-align-text</p>
-
-      <div class="valign-wrapper" style="height: 200px; background-color: #ccc;">
-        <p>This should be vertically aligned</p>
+      <h1 class="center-align">NAVBAR</h1>
+      <div class="row" style="text-align: center; display: flex; justify-content: space-between;">
+        <a class="btn-large blue" >css 1</a>
+        <a class="btn-large green">css 2</a>
+        <a class="btn-large yellow">js 1</a>
+        <a class="btn-large red">js 2</a>
       </div>
-
-      <p class="left">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, voluptate!</p>
-      <p class="right">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, voluptate!</p>
-      <p class="left">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, voluptate!</p>
-    </div>
-
-
+    </div>    
+      <nav>
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="#" class="brand-logo" ><img src="./download.svg" alt="" srcset=""></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><a href="#">Home</a></li>
+              <li class="active"><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <br/>
+      <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#!">one</a></li>
+        <li><a href="#!">two</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">three</a></li>
+      </ul>
+      <nav class="blue  darken-4">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="#" class="brand-logo" ><img src="./download.svg" alt="" srcset=""></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><a href="#">Home</a></li>
+              <li class="active"><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+              <li><a class="waves-effect waves-light btn">Button</a></li>
+              <i class="material-icons">person</i>
+            </ul>
+          </div>
+        </div>
+      </nav>      
+      <br/>
+      <nav class="black">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="#" class="brand-logo" ><img src="./download.svg" alt="" srcset=""></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><a href="#">Home</a></li>
+              <li class="active"><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <br/>
+      <nav class="green">
+          <div class="nav-wrapper">
+            <form>
+              <div class="input-field">
+                <input id="search" type="search" required>
+                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                <i class="material-icons">close</i>
+              </div>
+            </form>
+          </div>
+      </nav>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.dropdown-trigger');
+        var instances = M.Dropdown.init(elems, '');
+      });
+    </script>
   </body>
 </html>
