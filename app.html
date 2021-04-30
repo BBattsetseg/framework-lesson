@@ -10,75 +10,230 @@
         padding: 10px;
         text-align: center;
         }
+
+      .indicator {
+        color: pink;
+        width: 50px;
+        height: 20px;
+        margin-left: 200px;
+      }
     </style>
   </head>
   <body>
     <div class="container">
-      <h1 class="center-align">GRID</h1>
-      <div class="row" style="text-align: center; display: flex; justify-content: space-between;">
-        <a class="btn-large blue" >css 1</a>
-        <a class="btn-large green">css 2</a>
-        <a class="btn-large yellow">js 1</a>
-        <a class="btn-large red">js 2</a>
-      </div>
-      <div>
+      <h1 class="center-align">CARD</h1>
         <div class="row">
-          <div class="col s1"><div class="box">1</div></div>
-          <div class="col s1"><div class="box">2</div></div>
-          <div class="col s1"><div class="box">3</div></div>
-          <div class="col s1"><div class="box">4</div></div>
-          <div class="col s1"><div class="box">5</div></div>
-          <div class="col s1"><div class="box">6</div></div>
-          <div class="col s1"><div class="box">7</div></div>
-          <div class="col s1"><div class="box">8</div></div>
-          <div class="col s1"><div class="box">9</div></div>
-          <div class="col s1"><div class="box">10</div></div>
-          <div class="col s1"><div class="box">11</div></div>
-          <div class="col s1"><div class="box">12</div></div>       
-        </div>
-        <div class="row">
-          <div class="col s4"><div class="box">1</div></div>
-          <div class="col s4"><div class="box">2</div></div>
-          <div class="col s4"><div class="box">3</div></div>   
-        </div>
-        <div class="row">
-          <div class="col s6"><div class="box">1</div></div>
-          <div class="col s6"><div class="box">2</div></div>  
-        </div>
-        <div class="row">
-          <div class="col m12 l1"><div class="box">1</div></div>
-          <div class="col m12 l1"><div class="box">2</div></div>
-          <div class="col m12 l1"><div class="box">3</div></div>
-          <div class="col m12 l1"><div class="box">4</div></div>
-          <div class="col m12 l1"><div class="box">5</div></div>
-          <div class="col m12 l1"><div class="box">6</div></div>
-          <div class="col m12 l1"><div class="box">7</div></div>
-          <div class="col m12 l1"><div class="box">8</div></div>
-          <div class="col m12 l1"><div class="box">9</div></div>
-          <div class="col m12 l1"><div class="box">10</div></div>
-          <div class="col m12 l1"><div class="box">11</div></div>
-          <div class="col m12 l1"><div class="box">12</div></div>       
-        </div>
-        <div class="row">
-          <div class="col m12 l4"><div class="box">1</div></div>
-          <div class="col m12 l4"><div class="box">2</div></div>
-          <div class="col m12 l4"><div class="box">3</div></div>   
-        </div>
-        <div class="row">
-          <div class="col m12 l9"><div class="box">1</div></div>
-          <div class="col m12 l3"><div class="box">2</div></div>
-        </div>
-        <div class="row">
-          <div class="col s5"><div class="box">2</div></div>
-          <div class="col s7"><div class="box">1</div></div>
-        </div>
-        <div class="row">
-          <div class="col s6 offset-s3"><div class="box">login</div></div>
-        </div>
-      </div>
+          <div class="col s12 m6">
+            <div class="card">
+              <div class="card-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatum ipsa deserunt ipsum itaque fugiat alias provident eius dolor excepturi!</p>
+              </div>
+            </div>
+            <div class="card red">
+              <div class="card-content white-text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatum ipsa deserunt ipsum itaque fugiat alias provident eius dolor excepturi!</p>
+              </div>
+            </div>
+          </div>   
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-content">
+                  <span class="card-title">
+                    Card with title
+                  </span>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatum ipsa deserunt ipsum itaque fugiat alias provident eius dolor excepturi!</p>
+                </div>
+                  <div class="card-action">
+                    <a href="#">Read more</a>
+                    <a href="#">Read more</a>
+                  </div>
+                </div>
+            </div>          
+          </div>
+          <br/>
+          <div class="row">
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-image">
+                  <img src="./sample-1.jpg" alt="">
+                  <span class="card-title">Card Image</span>
+                </div>
+                <div class="card-content">
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, quibusdam.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-image">
+                  <img src="./articleocw-5d07e6b3790af.jpg" alt="">
+                  <span class="card-title">Image button</span>
+                  <a href="#" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                </div>
+                <div class="card-content grey">
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, quibusdam.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br/>
+          <div class="row">
+            <div class="col m6 s12">
+              <div class="card horizontal">
+                <div class="card-image">
+                  <img src="./depositphotos_162080554-stock-photo-modern-white-office-desk-top.jpg" alt="" srcset="">
+                </div>
+                <div class="card-stacked"></div>
+                <div class="card-content">
+                  <div class="card-title"><span>horizontal</span></div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, eaque.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col m6 s12">
+              <div class="card">
+                <div class="card-image">
+                  <img src="./office.jpg" alt="" class="activator">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator">Card Reveal<i class="material-icons right">more_vert</i></span>
+                  <p><a href="#">read more</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title">Card Reveal<i class="material-icons right">close</i></span>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci pariatur ducimus, odit iusto ipsam dolor.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br/>
+          <div class="row">
+            <div class="col m6 s12">
+              <div class="card">
+                <div class="card-content">
+                  <span class="card-title">
+                    Tabbed Card
+                  </span>
+                  <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class="card-tabs">
+                  <ul class="tabs tabs-fixed-width">
+                    <li class="tab"><a href="#test4">tab1</a></li>
+                    <li class="tab"><a class="active" href="#test5">tab2</a></li>
+                    <li class="indicator"></li>
+                    <li class="tab"><a href="#test6">tab3</a></li>
+                   
+                  </ul>
+                </div>
+                <div class="card-content grey lighten-4">
+                  <div id="test4">this is content for tab 1</div>
+                  <div id="test5">this is content for tab 2</div>
+                  <div id="test6">this is content for tab 3</div>
+                </div>
+              </div>
+            </div>
+            <div class="col m6 s12">
+              <div class="card orange">
+                <div class="card-content ">
+                  <span class="card-title">
+                    Tabbed Card
+                  </span>
+                  <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class="card-tabs">
+                  <ul class="tabs tabs-fixed-width  orange">
+                    <li class="tab"><a href="#test4" class=" white-text" >tab1</a></li>
+                    <li class="tab"><a class="active  white-text" href="#test5">tab2</a></li>
+                    <li class="indicator"></li>
+                    <li class="tab"><a href="#test6 " class=" white-text">tab3</a></li>               
+                  </ul>
+                </div>
+                <div class="card-content black white-text">
+                  <div id="test4">this is content for tab 1</div>
+                  <div id="test5">this is content for tab 2</div>
+                  <div id="test6">this is content for tab 3</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col m4">
+              <div class="card small">
+                <div class="card-image">
+                  <img src="./8340.jpg">
+                  <span class="card-title">Card Title</span>
+                </div>
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">READMORE</a>
+                </div>
+              </div>
+            </div>
+            <div class="col m4">
+              <div class="card medium">
+                <div class="card-image">
+                  <img src="./8340.jpg">
+                  <span class="card-title">Card Title</span>
+                </div>
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">READMORE</a>
+                </div>
+              </div>
+            </div>
+            <div class="col m4">
+              <div class="card large">
+                <div class="card-image">
+                  <img src="./8340.jpg">
+                  <span class="card-title">Card Title</span>
+                </div>
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">READMORE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col m3">
+              <div class="card-panel blue darken-2">
+                <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum nam eligendi omnis iusto laborum autem incidunt consequatur error in libero ea voluptas, quidem aperiam illo non voluptate possimus doloremque veritatis cupiditate fugiat eaque sapiente praesentium dolores alias? Ex, tenetur explicabo.</span>
+              </div>
+            </div>
+            <div class="col m3">
+              <div class="card-panel indigo">
+                <span class="white-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum nam eligendi omnis iusto laborum autem incidunt consequatur error in libero ea voluptas, quidem aperiam illo non voluptate possimus doloremque veritatis cupiditate fugiat eaque sapiente praesentium dolores alias? Ex, tenetur explicabo.</span>
+              </div>
+            </div>
+            <div class="col m3">
+              <div class="card-panel cyan">
+                <span >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum nam eligendi omnis iusto laborum autem incidunt consequatur error in libero ea voluptas, quidem aperiam illo non voluptate possimus doloremque veritatis cupiditate fugiat eaque sapiente praesentium dolores alias? Ex, tenetur explicabo.</span>
+              </div>
+            </div>
+            <div class="col m3">
+              <div class="card-panel amber">
+                <span >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum nam eligendi omnis iusto laborum autem incidunt consequatur error in libero ea voluptas, quidem aperiam illo non voluptate possimus doloremque veritatis cupiditate fugiat eaque sapiente praesentium dolores alias? Ex, tenetur explicabo.</span>
+              </div>
+            </div>
+          </div>
     </div>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      var instance = M.Tabs.init(el, {duration: 300});
+      instance.select('test4');
+      instance.updateTabIndicator();
+    </script>
   </body>
 </html>
