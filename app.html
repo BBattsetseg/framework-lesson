@@ -7,52 +7,129 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="center-align">Breadcrumbs & Footer</h1>
+      <h1 class="center-align">Form & Input</h1>
       <div class="row" style="text-align: center; display: flex; justify-content: space-between;">
         <a class="btn-large blue" >css 1</a>
         <a class="btn-large green">css 2</a>
         <a class="btn-large yellow">js 1</a>
         <a class="btn-large red">js 2</a>
       </div>
-    </div>
-    <nav class="grey">
-      <div class="container">
-          <div class="nav-wrapper">
-            <div class="col s12">
-              <a href="#" class="breadcrumb">Home</a>
-              <a href="#" class="breadcrumb">Users</a>
-              <a href="#" class="breadcrumb">Brad</a>
+      <br/>
+      <div class="row">
+        <div class="col s12">
+          <div class="row">
+            <div class="input-field col s12">
+              <input type="text" placeholder="name" id="first_name" class="validate">
+              <label for="first_name"></label>
+            </div>
+          </div>     
+          <div class="row">
+            <div class="input-field col s12">
+              <input type="email" id="email" class="validate" placeholder="john@gmail.com">
+              <label for="email" >Email</label>
             </div>
           </div>
+          <form class="row">
+            <div class="input-field col s12">
+              <textarea id="textarea" class="materialize-textarea" placeholder="Message"></textarea>
+              <label for="textarea">Message</label>
+            </div>
+          </form>
+          <div class="row">
+            <div class="col s12">
+              Number of users:
+              <div class="input-field inline">
+                <input type="number" id="number" class="validate">
+                <label for="number">#</label>
+                <!-- <span class="helper-text" data-error="wrong" data-success="right">#</span> -->
+              </div>
+            </div>
+          </div>
+          <div class="input-field col s12">
+            <I class="material-icons prefix">phone</I>
+            <input type="tel" id="icon-telephone" class="validate">
+            <label for="icon-telephone">Phone number</label>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input type="email" id="email" class="validate" placeholder="Email">
+              <label for="email" >Email</label>
+            </div>
+          </div>
+          <div class="input-field col s12">
+            <select>
+              <option value="" disabled selected>Select option</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+            </select>
+            <label>Select list</label>
+          </div>
+          <div class="input-field col s12">
+            <select>
+              <optgroup label="Option-1">
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+              </optgroup>
+              <optgroup label="Option-2">
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+              </optgroup>
+            </select>
+            <label>Select list</label>
+          </div>
+          <form action="#">
+            <p>
+              <label>
+                <input class="with-gap" name="group1" type="radio"  />
+                <span>Male</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input name="group1" type="radio" disabled="disabled" />
+                <span>Female</span>
+              </label>
+            </p>
+          </form>
+          <br/>
+          <br/>
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span>HTML</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" checked="checked" />
+                <span>CSS</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" class="filled-in"  />
+                <span>Javascript</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" disabled="disabled" />
+                <span>PHP</span>
+              </label>
+            </p>
+          </form>
+        </div>
       </div>
-    </nav>
+    </div>
     <br/>
-  
-    <footer class="page-footer grey darken-3">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">About us</h5>
-            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-          </div>
-          <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">Links</h5>
-            <ul>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="footer-copyright  grey darken-1">
-        <div class="container">
-        © 2018 Copyright Text
-        <a class="grey-text text-lighten-4 right" href="#!">Terms & Conditions</a>
-        </div>
-      </div>
-    </footer>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('select');
+        var instances = M.FormSelect.init(elems, '');
+      });
+    </script>
      
     
      
