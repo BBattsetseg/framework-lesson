@@ -10,13 +10,6 @@
         padding: 10px;
         text-align: center;
         }
-
-      .indicator {
-        color: pink;
-        width: 50px;
-        height: 20px;
-        margin-left: 200px;
-      }
     </style>
   </head>
   <body>
@@ -231,9 +224,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
-      var instance = M.Tabs.init(el, {duration: 300});
-      instance.select('test4');
-      instance.updateTabIndicator();
+      var instance = M.Tabs.init(document.querySelectorAll('.tabs'), '');
     </script>
   </body>
 </html>
