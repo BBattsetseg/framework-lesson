@@ -136,16 +136,16 @@
                 </div>
                 <div class="card-tabs">
                   <ul class="tabs tabs-fixed-width  orange">
-                    <li class="tab"><a href="#test4" class=" white-text" >tab1</a></li>
-                    <li class="tab"><a class="active  white-text" href="#test5">tab2</a></li>
+                    <li class="tab"><a href="#test1" class=" white-text" >tab1</a></li>
+                    <li class="tab"><a class="active  white-text" href="#test2">tab2</a></li>
                     <li class="indicator"></li>
-                    <li class="tab"><a href="#test6 " class=" white-text">tab3</a></li>               
+                    <li class="tab"><a href="#test3 " class=" white-text">tab3</a></li>               
                   </ul>
                 </div>
                 <div class="card-content black white-text">
-                  <div id="test4">this is content for tab 1</div>
-                  <div id="test5">this is content for tab 2</div>
-                  <div id="test6">this is content for tab 3</div>
+                  <div id="test1">this is content for tab 1</div>
+                  <div id="test2">this is content for tab 2</div>
+                  <div id="test3">this is content for tab 3</div>
                 </div>
               </div>
             </div>
@@ -224,7 +224,12 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
-      var instance = M.Tabs.init(document.querySelectorAll('.tabs'), '');
+      document.addEventListener('DOMContentLoaded',function(){
+        let el = document.querySelectorAll('.tabs');
+        el.forEach((e)=>{
+          var instance = M.Tabs.init(e,'');
+        })
+      })
     </script>
   </body>
 </html>
