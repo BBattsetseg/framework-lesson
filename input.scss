@@ -1,21 +1,60 @@
-$colors:(
-    b200: #0084F8,
-    d400: #001B36,
-    white: #FFFFFF,
-    b100: #58C2F1,
-    r100: #FF8576,
-    g100: #47C2B1,
-    d100: #F0F5F9,
-    d200: #C9D6DF,
-    d300: #52616B,
-);
+$primary: #0084F8;
+$default: #FFFFFF;
+$success: #58C2F1;
+$disabled:#aaa8a8;
+$delete: #FF8576;
 
-@for $border-weight from 1 through 10 {
-  @each $key,$value in $colors {
-    .border-#{$key}-#{$border-weight}{
-      border: $border-weight+px $value solid;
-    }
-  }
+.btn-shared {
+  width: fit-content;
+  padding: 10px 20px;
+  border: none;
+  background-color: $default;
+  border-bottom:$disabled 2px solid;
+  margin: 10px
 }
+ 
+.container {
+  margin: auto;
+  width: 800px;
+  height: 70%;
+  text-align: center;
+    .btn {
+      @extend .btn-shared;
+      &-primary {
+        @extend .btn-shared;
+        background-color: $primary;
+        color: $default;
+        border: none;
+      };
+      &-secondary {
+        @extend .btn-shared;
+        background-color: $default;
+        color: $primary;
+        border: 1px $primary solid;
+      }
+
+      &-disabled {
+        @extend .btn-shared;
+        background-color: $disabled;
+        color: $default;
+      }
+
+      &-success {
+        @extend .btn-shared;
+        background-color: $success;
+        color: $default;
+        border: none;
+      }
+
+      &-delete {
+        @extend .btn-shared;
+        background-color: $delete;
+        color: $default;
+      }
+    
+    }
+}
+
+
 
 
