@@ -1,13 +1,13 @@
 $colors:(
-    B200: #0084F8,
-    D400: #001B36,
-    White: #FFFFFF,
-    B100: #58C2F1,
-    R100: #FF8576,
-    G100: #47C2B1,
-    D100: #F0F5F9,
-    D200: #C9D6DF,
-    D300: #52616B,
+    b200: #0084F8,
+    d400: #001B36,
+    white: #FFFFFF,
+    b100: #58C2F1,
+    r100: #FF8576,
+    g100: #47C2B1,
+    d100: #F0F5F9,
+    d200: #C9D6DF,
+    d300: #52616B,
 );
 
 @each $code, $value in $colors {
@@ -15,3 +15,11 @@ $colors:(
       background-color: $value;
     }
   }
+
+@each $key, $value in $colors {
+  .b-#{$key} {
+    background-color: $value;
+  }
+}
+
+

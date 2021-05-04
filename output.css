@@ -1,36 +1,72 @@
-.background-B200 {
+.background-b200 {
   background-color: #0084F8;
 }
 
-.background-D400 {
+.background-d400 {
   background-color: #001B36;
 }
 
-.background-White {
+.background-white {
   background-color: #FFFFFF;
 }
 
-.background-B100 {
+.background-b100 {
   background-color: #58C2F1;
 }
 
-.background-R100 {
+.background-r100 {
   background-color: #FF8576;
 }
 
-.background-G100 {
+.background-g100 {
   background-color: #47C2B1;
 }
 
-.background-D100 {
+.background-d100 {
   background-color: #F0F5F9;
 }
 
-.background-D200 {
+.background-d200 {
   background-color: #C9D6DF;
 }
 
-.background-D300 {
+.background-d300 {
+  background-color: #52616B;
+}
+
+.b-b200 {
+  background-color: #0084F8;
+}
+
+.b-d400 {
+  background-color: #001B36;
+}
+
+.b-white {
+  background-color: #FFFFFF;
+}
+
+.b-b100 {
+  background-color: #58C2F1;
+}
+
+.b-r100 {
+  background-color: #FF8576;
+}
+
+.b-g100 {
+  background-color: #47C2B1;
+}
+
+.b-d100 {
+  background-color: #F0F5F9;
+}
+
+.b-d200 {
+  background-color: #C9D6DF;
+}
+
+.b-d300 {
   background-color: #52616B;
 }
 
