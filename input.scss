@@ -10,15 +10,11 @@ $colors:(
     d300: #52616B,
 );
 
-@each $code, $value in $colors {
-    .background-#{$code} {
-      background-color: $value;
+@for $border-weight from 1 through 10 {
+  @each $key,$value in $colors {
+    .border-#{$key}-#{$border-weight}{
+      border: $border-weight+px $value solid;
     }
-  }
-
-@each $key, $value in $colors {
-  .b-#{$key} {
-    background-color: $value;
   }
 }
 
